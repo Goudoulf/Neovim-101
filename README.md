@@ -1,6 +1,6 @@
 # Atelier : Introduction à Neovim
 
-Bienvenue dans cet atelier où nous allons découvrir **Neovim**, un éditeur de texte moderne, puissant et extensible. Ce document servira de support tout au long de l’atelier et pour vos futures explorations.
+Bienvenue dans cet atelier où nous allons découvrir **Neovim**, un éditeur de texte moderne, puissant et extensible.
 
 ---
 
@@ -59,10 +59,7 @@ Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle sp�
 L'un des points forts de Vim/Neovim est sa navigation ultra-rapide sans utiliser la souris. Voici les principales commandes de déplacement :
 
 #### Déplacements simples :
-- `h` : Déplacer le curseur à gauche.  
-- `l` : Déplacer le curseur à droite.  
-- `j` : Descendre d’une ligne.  
-- `k` : Monter d’une ligne.  
+- `h` `l` `j` `k`: Déplacer le curseur à gauche / droite / bas / haut 
 
 #### Déplacements avancés :
 - `w` : Aller au début du mot suivant.  
