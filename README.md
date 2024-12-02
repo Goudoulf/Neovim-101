@@ -28,36 +28,131 @@ Bienvenue dans cet atelier où nous allons découvrir **Neovim**, un éditeur de
 
 ---
 
-### 2. Fonctionnalités de base
+## 2. Fonctionnalités de base
 
-#### Modes de Vim
-- **Normal** : Navigation et exécution de commandes.
-- **Insertion** : Édition du texte.
-- **Visual** : Sélectionner des blocs de texte.
-- **Command-line** : Exécuter des commandes (ex. `:w`, `:q`).
-
-#### Navigation (Vim Motion)
-- Déplacements :
-  - `h`, `l`, `j`, `k` : Gauche, droite, bas, haut.
-  - `w`, `b`, `e` : Sauter des mots.
-  - `0`, `$` : Début et fin de ligne.
-- Exercices :
-  - Naviguer dans un fichier avec les motions.
-  - Sauter entre paragraphes ou sections.
-
-#### Buffers
-- Concept : Un **buffer** est un fichier ouvert en mémoire.
-- Différences avec fenêtres (`split`) et onglets.
-
-#### Terminal intégré
-- Commande : `:term` pour ouvrir un terminal dans Neovim.
-- Avantages : Pas besoin de basculer entre des applications.
-
-#### Quickfix et Macros
-- **Quickfix** : Liste d’erreurs ou résultats de recherche dans une fenêtre dédiée.
-- **Macros** : Automatiser des tâches répétitives (`q` pour enregistrer, `@` pour exécuter).
+Neovim repose sur des concepts fondamentaux hérités de Vim, qui permettent une utilisation puissante et efficace de l'éditeur. Voici les bases pour bien démarrer.
 
 ---
+
+### Modes de Vim
+
+Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle spécifique. Voici les principaux :
+
+- **Mode Normal** (par défaut) : Utilisé pour naviguer dans le fichier, exécuter des commandes ou manipuler du texte.  
+  - Exemple : En mode normal, tapez `dd` pour supprimer une ligne ou `x` pour supprimer un caractère.
+- **Mode Insertion** : Permet d’insérer ou d’éditer du texte.  
+  - Passez en mode insertion avec `i` (avant le curseur), `a` (après le curseur) ou `o` (nouvelle ligne).
+- **Mode Visual** : Permet de sélectionner des blocs de texte.  
+  - `v` : Mode visual (caractère par caractère).  
+  - `V` : Sélection ligne par ligne.  
+  - `Ctrl+v` : Sélection par blocs (Visual Block).
+- **Mode Command-line** : Pour exécuter des commandes spécifiques.  
+  - Tapez `:` pour entrer dans ce mode et exécuter des commandes comme `:w` (sauvegarder), `:q` (quitter), ou `:!ls` (exécuter une commande shell).
+
+---
+
+### Navigation (Vim Motion)
+
+L'un des points forts de Vim/Neovim est sa navigation ultra-rapide sans utiliser la souris. Voici les principales commandes de déplacement :
+
+#### Déplacements simples :
+- `h` : Déplacer le curseur à gauche.  
+- `l` : Déplacer le curseur à droite.  
+- `j` : Descendre d’une ligne.  
+- `k` : Monter d’une ligne.  
+
+#### Déplacements avancés :
+- `w` : Aller au début du mot suivant.  
+- `b` : Retourner au début du mot précédent.  
+- `e` : Aller à la fin du mot.  
+- `0` : Aller au début de la ligne.  
+- `$` : Aller à la fin de la ligne.  
+
+#### Exercices pratiques :
+1. **Naviguer dans un texte** : Ouvrez un fichier, utilisez `j`, `k`, `w`, et `b` pour explorer.
+2. **Sauter entre sections** : Combinez `}` pour sauter au paragraphe suivant et `{` pour revenir au précédent.
+
+---
+
+### Buffers
+
+#### Qu’est-ce qu’un Buffer ?
+Un **buffer** est simplement un fichier ouvert en mémoire dans Neovim. Contrairement à certains éditeurs, Neovim ne ferme pas un fichier lorsque vous en ouvrez un autre.
+
+#### Différences avec les fenêtres et les onglets :
+- **Buffers** : Tous les fichiers ouverts (actuels ou non).  
+  - Liste des buffers : Tapez `:ls`.  
+  - Naviguer : `:b<number>` ou utilisez un plugin comme **Telescope**.
+- **Fenêtres (Splits)** : Divisez votre écran pour afficher plusieurs buffers.  
+  - Horizontal : `:split` ou `Ctrl+w s`.  
+  - Vertical : `:vsplit` ou `Ctrl+w v`.
+- **Onglets** : Groupes de fenêtres. Utilisez `:tabnew` pour ouvrir un nouvel onglet.
+
+#### Exercices pratiques :
+1. Ouvrez plusieurs fichiers (`:e <filename>`).
+2. Affichez les fichiers ouverts (`:ls`) et basculez entre eux (`:b<number>`).
+3. Essayez les splits avec `:split` et `:vsplit`.
+
+---
+
+### Terminal intégré
+
+Neovim intègre un terminal directement dans l’éditeur, ce qui permet de travailler sans quitter son environnement.
+
+#### Commandes :
+- Tapez `:term` pour ouvrir un terminal.
+- Passez entre le terminal et le mode normal :
+  - `Ctrl+\` suivi de `Ctrl+n` pour revenir en mode normal.
+- Fermez le terminal avec `:q`.
+
+#### Avantages :
+- Permet d'exécuter des commandes shell sans quitter Neovim.
+- Idéal pour exécuter un script, compiler du code ou utiliser des outils comme `git`.
+
+#### Exercice pratique :
+1. Ouvrez un terminal avec `:term`.
+2. Exécutez une commande (par exemple, `ls` ou `python`).
+3. Revenez au mode normal et fermez le terminal avec `:q`.
+
+---
+
+### Quickfix et Macros
+
+#### Quickfix
+Le Quickfix est une fonctionnalité puissante pour gérer les erreurs ou les résultats de recherche dans une fenêtre dédiée.
+
+- **Ouvrir le Quickfix** : Utilisez `:copen`.  
+- **Parcourir les erreurs** :  
+  - `:cnext` pour aller à l’erreur suivante.  
+  - `:cprev` pour revenir à l’erreur précédente.
+
+#### Exemple :
+1. Recherchez un mot dans tout le projet avec `:vimgrep /<mot>/g **/*.txt`.
+2. Ouvrez le Quickfix avec `:copen`.
+3. Naviguez dans les résultats avec `:cnext` et `:cprev`.
+
+#### Macros
+Les macros permettent d’automatiser des séquences de commandes. Voici comment les utiliser :
+
+1. **Enregistrer une macro** :
+   - Tapez `q<lettre>` (par exemple, `qa` pour enregistrer dans la macro `a`).
+   - Effectuez vos actions.
+   - Terminez avec `q`.
+
+2. **Rejouer la macro** :
+   - Tapez `@<lettre>` (par exemple, `@a` pour rejouer la macro `a`).
+
+3. **Répéter plusieurs fois** :
+   - Tapez `<nombre>@<lettre>` (par exemple, `10@a` pour exécuter 10 fois la macro `a`).
+
+#### Exemple :
+1. Ouvrez un fichier avec plusieurs lignes similaires.
+2. Enregistrez une macro qui modifie une ligne (par exemple, ajouter un mot).
+3. Répétez la macro sur les autres lignes.
+
+---
+
+Avec ces bases, vous pourrez naviguer, éditer et manipuler des fichiers comme un pro ! Ces concepts sont les fondations sur lesquelles reposent les fonctionnalités avancées de Neovim. 💡
 
 ### 3. Avantages et inconvénients
 
