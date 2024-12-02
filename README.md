@@ -38,14 +38,17 @@ Neovim repose sur des concepts fondamentaux hérités de Vim, qui permettent une
 
 Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle spécifique. Voici les principaux :
 
-- **Mode Normal** (par défaut) : Utilisé pour naviguer dans le fichier, exécuter des commandes ou manipuler du texte.  
+- **Mode Normal** (par défaut) : Utilisé pour naviguer dans le fichier, exécuter des commandes ou manipuler du texte.
   - Exemple : En mode normal, tapez `dd` pour supprimer une ligne ou `x` pour supprimer un caractère.
+
 - **Mode Insertion** : Permet d’insérer ou d’éditer du texte.  
   - Passez en mode insertion avec `i` (avant le curseur), `a` (après le curseur) ou `o` (nouvelle ligne).
+
 - **Mode Visual** : Permet de sélectionner des blocs de texte.  
   - `v` : Mode visual (caractère par caractère).  
   - `V` : Sélection ligne par ligne.  
   - `Ctrl+v` : Sélection par blocs (Visual Block).
+
 - **Mode Command-line** : Pour exécuter des commandes spécifiques.  
   - Tapez `:` pour entrer dans ce mode et exécuter des commandes comme `:w` (sauvegarder), `:q` (quitter), ou `:!ls` (exécuter une commande shell).
 
