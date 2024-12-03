@@ -3,6 +3,12 @@
 Neovim repose sur des concepts fondamentaux hérités de Vim, qui permettent une utilisation puissante et efficace de l'éditeur. Voici les bases pour bien démarrer.
 
 ---
+### A retenir 
+
+- `vimtutor` : tutoriel intégré à Vim, pour vous guider dans l'apprentissage des commandes de navigation et modification.
+
+- `:help [command]` : affiche le menu d'aide de la commande. 
+
 
 ### Modes de Vim
 
