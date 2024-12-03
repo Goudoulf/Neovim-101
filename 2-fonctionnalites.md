@@ -135,3 +135,4 @@ Les registres permettent de copier et coller efficacement.
 - `@<lettre>` : Rejouer une macro.
 
 ---
+[⬅️ Précédent : Introduction](1-introduction.md) | [➡️ Suivant : Navigation et recherche](3-navigation-et-recherche.md)

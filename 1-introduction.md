@@ -9,3 +9,4 @@
 - **Pas un IDE de base** : un éditeur minimaliste que l’on peut enrichir avec des plugins.
 
 ---
+[⬅️ Retour au sommaire](README.md) | [➡️ Suivant : Fonctionnalités de base](2-fonctionnalites.md)
