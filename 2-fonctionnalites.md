@@ -21,12 +21,35 @@ Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle sp�
 
 ---
 
+### Buffers
+
+#### Qu’est-ce qu’un Buffer ?
+Un **buffer** est simplement un fichier ouvert en mémoire dans Neovim. Contrairement à certains éditeurs, Neovim ne ferme pas un fichier lorsque vous en ouvrez un autre.
+
+#### Différences avec les fenêtres et les onglets :
+- **Buffers** : Tous les fichiers ouverts (actuels ou non).  
+  - Liste des buffers : Tapez `:ls`.  
+  - Naviguer : `:b<number>` ou utilisez un plugin comme **Telescope**.
+- **Fenêtres (Splits)** : Divisez votre écran pour afficher plusieurs buffers.  
+  - Horizontal : `:split` ou `Ctrl+w s`.  
+  - Vertical : `:vsplit` ou `Ctrl+w v`.
+- **Onglets** : Groupes de fenêtres. Utilisez `:tabnew` pour ouvrir un nouvel onglet.
+
+#### Exercices pratiques :
+1. Ouvrez plusieurs fichiers (`:e <filename>`).
+2. Affichez les fichiers ouverts (`:ls`) et basculez entre eux (`:b<number>`).
+3. Essayez les splits avec `:split` et `:vsplit`.
+
+---
+
 ### Navigation (Vim Motion)
 
 - `h` `l` `j` `k` : Déplacer le curseur à gauche / droite / bas / haut.
 - `w` : Aller au début du mot suivant.
 - `b` : Retourner au début du mot précédent.
 - `e` : Aller à la fin du mot.
+
+- [**Vim Cheat Sheet**](https://vim.rtorr.com/)
 
 ---
 
@@ -48,9 +71,12 @@ Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle sp�
 
 ### Marques et sauts (Marks and Jumps)
 
+- `Crtl - 6` : retourner sur le buffer precedent.
+
 #### Marques
 - `m<lettre>` : Définir une marque.
 - `'a` ou `` `a `` : Revenir à une marque.
+- Si on defini une lettre majuscule on peut marque entre buffer.
 
 #### Sauts
 - `Ctrl+o` : Revenir au dernier emplacement du curseur.
