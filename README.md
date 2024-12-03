@@ -20,7 +20,6 @@ Bienvenue dans cet atelier où nous allons découvrir **Neovim**, un éditeur de
 2. [Fonctionnalités de base](2-fonctionnalites.md)
 3. [Configurer Neovim](3-configurer.md)
 4. [Les Plugins](4-plugins.md)
-5. [Cas pratiques](5-cas-pratiques.md)
-6. [Ressources pour aller plus loin](6-ressources.md)
+5. [Ressources pour aller plus loin](6-ressources.md)
 
 Avec ces bases, vous êtes prêt à tirer le maximum de Neovim pour éditer vos fichiers efficacement !
