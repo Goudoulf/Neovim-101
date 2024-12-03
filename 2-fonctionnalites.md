@@ -33,8 +33,10 @@ Un **buffer** est simplement un fichier ouvert en mémoire dans Neovim. Contrair
 - **Fenêtres (Splits)** : Divisez votre écran pour afficher plusieurs buffers.  
   - Horizontal : `:split` ou `Ctrl+w s`.  
   - Vertical : `:vsplit` ou `Ctrl+w v`.
-- **Onglets** : Groupes de fenêtres. Utilisez `:tabnew` pour ouvrir un nouvel onglet.
-
+- **Onglets** : Groupes de fenêtres. Utilisez `:
+  - Ouvrir un tab : `:tabnew` 
+  - Fermer un tab : `:tabclose`
+  - Passer au prochain tab : `:tabnext`
 #### Exercices pratiques :
 1. Ouvrez plusieurs fichiers (`:e <filename>`).
 2. Affichez les fichiers ouverts (`:ls`) et basculez entre eux (`:b<number>`).
