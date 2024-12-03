@@ -58,10 +58,9 @@ Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle sp�
 
 L'un des points forts de Vim/Neovim est sa navigation ultra-rapide sans utiliser la souris. Voici les principales commandes de déplacement :
 
-#### Déplacements simples :
-- `h` `l` `j` `k`: Déplacer le curseur à gauche / droite / bas / haut 
+#### Déplacements :
 
-#### Déplacements avancés :
+- `h` `l` `j` `k`: Déplacer le curseur à gauche / droite / bas / haut 
 - `w` : Aller au début du mot suivant.  
 - `b` : Retourner au début du mot précédent.  
 - `e` : Aller à la fin du mot.  
