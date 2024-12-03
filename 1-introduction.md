@@ -10,6 +10,10 @@
 - Fonctionne directement dans le terminal (core Linux).
 - **Pas un IDE de base** : un éditeur minimaliste que l’on peut enrichir avec des plugins.
 
+#### Avertissement
+- Il est assez certain que la maitrise de neovim est plus demandante en terme d'investissement temps. Vous allez etre amene régulierement a faire vous même vos recherches pour adapter votre outils à vos pratiques.
+- Le manuel de vim/nvim peut paraitre impressionnant mais regorge de toutes les ressources nécéssaire pour vous approprier la grande versatilité de l'outil.
+- `:help [request]` est votre ami. Utilisez le.
 
 ---
 
@@ -27,6 +31,11 @@
 - Works directly in the terminal (Linux core).
 - **Not a basic IDE**: a minimalist editor that can be enhanced with plugins.
 
+#### Warning
+
+- It is quite certain that mastering Neovim is more demanding in terms of time investment. You will regularly need to do your own research to adapt the tool to your practices.
+- The Vim/Nvim manual may seem intimidating, but it is full of all the necessary resources for you to take advantage of the tool's great versatility.
+- `:help [request]` is your friend. Use it.
 
 ---
 [⬅️ Retour au sommaire](README.md) | [➡️ Suivant : Fonctionnalités de base](2-fonctionnalites.md)
