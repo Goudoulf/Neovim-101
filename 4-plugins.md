@@ -26,8 +26,8 @@
 
 #### Plugin de style
 
-- [**notify**](https://github.com/rcarriga/nvim-notify) 
-- [**noice**](https://github.com/folke/noice.nvim) 
+- [**notify**](https://github.com/rcarriga/nvim-notify) : A fancy, configurable, notification manager for NeoVim
+- [**noice**](https://github.com/folke/noice.nvim) : Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu. 
 
 #### Plus aller plus loin
 
