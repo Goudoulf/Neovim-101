@@ -1,18 +1,38 @@
-## Configuration
+#  Configuration de Neovim avec Kickstart
 
-Pour aborder une configuration Neovim, plusieurs choix sont possibles:
 
-### Installation
+## Stratégies d'Installation
 
-- Configurations déjà existantes :
+- [ **Kickstart** ](github.com/nvim-lua/kickstart.nvim)
+  - Configuration minimaliste
+  - Nombre de fichiers restreint
+  - Idéal pour comprendre Neovim
+  - Personnalisable progressivement
+  - Utilisateurs désirant une base légère et compréhensible
 
-  - [ **Kickstart** ](github.com/nvim-lua/kickstart.nvim) : Regroupe des plugins essentiels sans trop en faire 
-    pour garder le nombre de fichiers restreint. Très simple à maintenir et à s'approprier.
+- [ **LazyVim**](lazyvim.org)
+  - Configuration extensive type IDE
+  - Nombreux plugins pré-configurés
+  - Complexité de personnalisation
+  - Utilisateurs recherchant une productivité immédiate
 
-  - [ **LazyVim**](lazyvim.org) : Configuration extensive visant a offrir une expérience proche d'un IDE.
-    Permet d'appréhender de nombreux plugins d'un coup. Difficile à comprendre et à personnaliser.
 
-### Prerequis
+## 📋 Prérequis Techniques
 
-- Un terminal avec les **true colors**, et avoir une **nerd-font** installée.
+
+### 🌈 True Colors
+- Support des couleurs 24 bits
+- Permet un rendu graphique riche et précis
+- Vérifiable avec la commande : `echo $COLORTERM`
+
+### 🔤 Nerd Fonts
+- Polices enrichies avec des icônes
+- Essentielles pour l'affichage de certaines icones et plugins
+
+
+## 📁 Structure de  Kickstart
+
+- `init.lua` : Point d'entrée de la configuration. Contient la majorite de la config.
+- `lua/custom/plugins` : Plugins customs
+- `lua/kickstart/` : Configuration specifique aux plugins
 
