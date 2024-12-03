@@ -14,7 +14,7 @@ Neovim repose sur des concepts fondamentaux hérités de Vim, qui permettent une
 
 Neovim (et Vim) fonctionne avec différents **modes**, chacun ayant un rôle spécifique. Voici les principaux :
 
-- **Mode Normal** (par défaut) : Utilisé pour naviguer dans le fichier, exécuter des commandes ou manipuler du texte.
+- **mode Normal** (par défaut) : Utilisé pour naviguer dans le fichier, exécuter des commandes ou manipuler du texte.
 - **Mode Insertion** : Permet d’insérer ou d’éditer du texte.
 - **Mode Visual** : Permet de sélectionner des blocs de texte.
 - **Mode Command-line** : Pour exécuter des commandes spécifiques.

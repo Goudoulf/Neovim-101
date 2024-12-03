@@ -12,8 +12,6 @@
 - [**Mason.nvim**](https://github.com/williamboman/mason.nvim?tab=readme-ov-file) : Gestion des serveurs LSP.
 - [**cmp-nvim-lsp**](https://github.com/hrsh7th/cmp-nvim-lsp) : Autocompletion avec le lsp
 
-
-
 #### Outils pratiques
 - [**conform**](https://github.com/stevearc/conform.nvim): Formater pour neovim.
 - [**todo-comments**](https://github.com/folke/todo-comments.nvim): Ajouter des flag TODO FIX dans les commentaire.
