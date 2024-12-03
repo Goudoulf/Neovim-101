@@ -1,7 +1,9 @@
 ## 1. Introduction à Neovim
 
 #### Historique
-- **Vi et Vim** : Créés pour Unix, ils sont rapides, légers et adaptés au terminal.
+
+- **vi** est un éditeur de texte plein écran écrit par Bill Joy en 1976 sur une des premières versions de la distribution Unix BSD. 
+- **vim** est un editeur de texte creer par Bram Moolenaar, inspirer par vi.
 - **Neovim** : Une version moderne de Vim introduite en 2014, avec un focus sur l’extensibilité et les outils modernes.
 
 #### Philosophie
