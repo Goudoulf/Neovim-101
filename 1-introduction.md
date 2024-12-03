@@ -11,8 +11,8 @@
 - **Pas un IDE de base** : un éditeur minimaliste que l’on peut enrichir avec des plugins.
 
 #### Avertissement
-- Il est assez certain que la maitrise de neovim est plus demandante en terme d'investissement temps. Vous allez etre amene régulierement a faire vous même vos recherches pour adapter votre outils à vos pratiques.
-- Le manuel de vim/nvim peut paraitre impressionnant mais regorge de toutes les ressources nécéssaire pour vous approprier la grande versatilité de l'outil.
+- Il est assez certain que la maîtrise de neovim est plus demandante en terme d'investissement temps qu'un IDE tel que VS Code ou Clion. Vous allez être amené régulierement a faire vous même vos recherches pour adapter votre outils à vos pratiques.
+- Le manuel de vim/nvim peut paraître impressionnant mais regorge de toutes les ressources nécéssaires pour vous approprier la grande versatilité de l'outil.
 - `:help [request]` est votre ami. Utilisez le.
 
 ---
